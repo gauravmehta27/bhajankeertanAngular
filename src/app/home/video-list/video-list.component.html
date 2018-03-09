@@ -1,0 +1,16 @@
+<div class="list-wrapper">
+  <div *ngFor="let videos of videoList">
+    <div class="list" (click)="setUrl(videos.url)">
+      <div class="list-img-div">
+        <img src={{videos.thumbnail}} alt="thumbnail" />
+      </div>
+      <div>
+        <h4 class="list-title">{{videos.title}}</h4>
+        <div class="list-duration-artist">
+          <p>{{videos.duration}}</p>
+          <p class="artist-text">{{videos.artist}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

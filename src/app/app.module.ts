@@ -10,6 +10,7 @@ import { AlertModule } from 'ngx-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactFormModule } from './contact-form/contact-form.module';
 import { HttpClientModule  } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,12 @@ import { HttpClientModule  } from '@angular/common/http';
     ContactFormModule,
     HttpModule,
     TabsModule.forRoot(),
-    AlertModule.forRoot()
+    AlertModule.forRoot(),
+    BrowserModule,
+    CommonModule
   ],
   providers: [
-    HttpClientModule 
+    HttpClientModule
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,56 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ff5959; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dd4b4b; 
+}
+
+.list-wrapper {
+  width: 96%;
+  height: 450px;
+  overflow: auto;
+  margin: auto; 
+  background-color: #fc4949;
+  color: #fff;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.list {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  width: 92%;
+  margin: auto;
+  margin-top: 4px;
+  cursor: pointer;
+}
+.list-img-div {
+  border: #8f8f8f solid 1px;
+  background-color: #f7f7f7;
+  padding: 1px;
+  margin: 0px 10px;
+  height: 50px;
+  width: 78px;
+}
+.list-title {
+  font-size: 12px;
+  width: 180px;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.list-duration-artist {
+  display: flex;
+}
+.artist-text {
+  margin-left: 10px;
+}
