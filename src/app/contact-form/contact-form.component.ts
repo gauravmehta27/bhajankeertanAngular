@@ -9,7 +9,8 @@ import { PostService } from './post.service';
 
 @Component({
   selector: 'contact-form',
-  templateUrl: './contact-form.component.html'
+  templateUrl: './contact-form.component.html',
+  styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent {
 
@@ -18,7 +19,8 @@ export class ContactFormComponent {
 
   public form= this.fb.group({
     email: ['', Validators.required ],
-    phone: ['', Validators.required ]
+    phone: ['', Validators.required ],
+    concern: ['', Validators.required ]
   });
 
   createPost(event) {
@@ -27,6 +29,10 @@ export class ContactFormComponent {
     this.service.create(post)
       .subscribe(
         Response => {
+          if(Response.status===200) {
+            console.log("success");
+          }
+         
           console.log(Response);
         },
         (error: AppError) => {

@@ -1,0 +1,21 @@
+<div class="videos-wrapper">
+  <h3 class="page-title">All Bhajans</h3>
+  <selected-video></selected-video>
+  <div class="videos-inner-wrapper" *ngFor="let videos of videoList">
+    <div class="list" (click)="setUrl(videos)">
+      <div class="videos-img-div">
+        <img src={{videos.thumbnail}} alt="thumbnail" />
+      </div>
+      <div class="videos-content">
+        <h4 class="videos-title">{{videos.title}}</h4>
+        <div class="videos-description">
+          <h5>{{videos.description}}</h5>
+        </div>
+        <div class="videos-duration-artist">
+          <span>{{videos.lyricist}}</span>
+          <span class="artist-text">{{videos.singer}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

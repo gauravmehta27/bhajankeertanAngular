@@ -1,7 +1,8 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ContactFormComponent } from './contact-form.component';
 import { ContactFormRoutingModule } from './contact-form-routing.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { PostService } from './post.service';
 
@@ -9,7 +10,9 @@ import { PostService } from './post.service';
   imports: [
     ContactFormRoutingModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    FormsModule,
+    BrowserModule
   ],
   declarations: [
     ContactFormComponent

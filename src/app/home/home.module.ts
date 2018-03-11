@@ -1,5 +1,6 @@
-import { FrameUrlService } from './frame-url.service';
 import { SafePipe } from './safety.pipe';
+import { BrowserModule } from '@angular/platform-browser';
+import { FrameUrlService } from './frame-url.service';
 import { HttpModule } from '@angular/http';
 import { DataService } from './../contact-form/data.service';
 import { VideoListComponent } from './video-list/video-list.component';
@@ -11,6 +12,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { FeaturedPlaylistComponent } from './featured-playlist/featured-playlist.component';
 
 @NgModule({
   imports: [
@@ -18,13 +20,15 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     CarouselModule.forRoot(),
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserModule
   ],
   declarations: [
     HomeComponent,
     SliderComponent,
     VideoFrameComponent,
     VideoListComponent,
+    FeaturedPlaylistComponent,
     SafePipe
   ],
   providers: [

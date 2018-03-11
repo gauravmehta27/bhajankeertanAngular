@@ -1,0 +1,11 @@
+<div class="playlist-wrapper">
+  <h4>Featured Playlist</h4>
+  <div class="playlist-inline">
+    <div class="list" *ngFor="let playlist of playList">
+      <a [routerLink]="['/videos',playlist.categotyId]">
+        <img src={{playlist.url}} alt={{playlist.title}}>
+        <h4 class="playlist-title">{{playlist.title}}</h4>
+      </a>
+    </div>
+  </div>
+</div>

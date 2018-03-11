@@ -1,14 +1,15 @@
-.home-wrapper {
+.video-wrapper {
   display: flex;
 }
-.home-wrapper video-frame {
-  width: 66%;
+.video-wrapper video-frame {
+  width: 65%;
   background-color: #000;
   background-image: url("assets/images/loading.gif");
   background-repeat: no-repeat;
   background-size: 40px;
   background-position: center;
+  height: 450px;
 }
-.home-wrapper video-list {
+.video-wrapper video-list {
   width: 34%;
 }

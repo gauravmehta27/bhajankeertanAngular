@@ -7,12 +7,12 @@ import { FrameUrlService } from "../frame-url.service";
   styleUrls: ['./video-frame.component.css']
 })
 export class VideoFrameComponent {
-  message:string;
+  url:string;
 
   constructor(private data: FrameUrlService) { }
 
   ngOnInit() {
-    this.data.currentUrl.subscribe(message => this.message = message)
+    this.data.currentUrl.subscribe(url => this.url = url)
   }
 
 }

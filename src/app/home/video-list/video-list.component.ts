@@ -7,12 +7,12 @@ import { FrameUrlService } from "../frame-url.service";
   styleUrls: ['./video-list.component.css']
 })
 export class VideoListComponent {
-  message:string;
+  url:string;
 
   constructor(private data: FrameUrlService) { }
 
   ngOnInit() {
-    this.data.currentUrl.subscribe(message => this.message = message)
+    this.data.currentUrl.subscribe(url => this.url = url)
   }
 
   setUrl(url) {
@@ -20,55 +20,55 @@ export class VideoListComponent {
   }
 
   videoList=[{
-    'url': "https://www.youtube.com/embed/5NPICjUcMTg",
+    'url': "https://www.youtube.com/embed/5NPICjUcMTg?autoplay=1",
     'title': "Bhawan Par Chainna Baaje",
     "thumbnail": "http://img.youtube.com/vi/5NPICjUcMTg/0.jpg",
     "duration": "4:50",
     "artist": "Amarjeet Bijli"
   },
   {
-    'url': "https://www.youtube.com/embed/IEoOH4AkGtk",
+    'url': "https://www.youtube.com/embed/IEoOH4AkGtk?autoplay=1",
     'title': "Maa hai badi mahaan",
     "thumbnail": "http://img.youtube.com/vi/IEoOH4AkGtk/0.jpg",
     "duration": "6:00",
     "artist": "Devender Sagar"
   },
   {
-    'url': "https://www.youtube.com/embed/5NPICjUcMTg",
+    'url': "https://www.youtube.com/embed/5NPICjUcMTg?autoplay=1",
     'title': "Bhawan Par Chainna Baaje",
     "thumbnail": "http://img.youtube.com/vi/5NPICjUcMTg/0.jpg",
     "duration": "4:50",
     "artist": "Amarjeet Bijli"
   },
   {
-    'url': "https://www.youtube.com/embed/IEoOH4AkGtk",
+    'url': "https://www.youtube.com/embed/IEoOH4AkGtk?autoplay=1",
     'title': "Maa hai badi mahaan",
     "thumbnail": "http://img.youtube.com/vi/IEoOH4AkGtk/0.jpg",
     "duration": "6:00",
     "artist": "Devender Sagar"
   },
   {
-    'url': "https://www.youtube.com/embed/5NPICjUcMTg",
+    'url': "https://www.youtube.com/embed/5NPICjUcMTg?autoplay=1",
     'title': "Bhawan Par Chainna Baaje",
     "thumbnail": "http://img.youtube.com/vi/5NPICjUcMTg/0.jpg",
     "duration": "4:50",
     "artist": "Amarjeet Bijli"
   },
   {
-    'url': "https://www.youtube.com/embed/IEoOH4AkGtk",
+    'url': "https://www.youtube.com/embed/IEoOH4AkGtk?autoplay=1",
     'title': "Maa hai badi mahaan",
     "thumbnail": "http://img.youtube.com/vi/IEoOH4AkGtk/0.jpg",
     "duration": "6:00",
     "artist": "Devender Sagar"
   },{
-    'url': "https://www.youtube.com/embed/5NPICjUcMTg",
+    'url': "https://www.youtube.com/embed/5NPICjUcMTg?autoplay=1",
     'title': "Bhawan Par Chainna Baaje",
     "thumbnail": "http://img.youtube.com/vi/5NPICjUcMTg/0.jpg",
     "duration": "4:50",
     "artist": "Amarjeet Bijli"
   },
   {
-    'url': "https://www.youtube.com/embed/IEoOH4AkGtk",
+    'url': "https://www.youtube.com/embed/IEoOH4AkGtk?autoplay=1",
     'title': "Maa hai badi mahaan",
     "thumbnail": "http://img.youtube.com/vi/IEoOH4AkGtk/0.jpg",
     "duration": "6:00",

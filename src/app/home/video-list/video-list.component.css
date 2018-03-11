@@ -15,7 +15,7 @@
 
 .list-wrapper {
   width: 96%;
-  height: 450px;
+  height: 416px;
   overflow: auto;
   margin: auto; 
   background-color: #fc4949;
@@ -27,10 +27,10 @@ img {
 }
 .list {
   display: flex;
-  border-bottom: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.4);
   width: 92%;
   margin: auto;
-  margin-top: 4px;
+  margin-top: 6px;
   cursor: pointer;
 }
 .list-img-div {
@@ -53,4 +53,11 @@ img {
 }
 .artist-text {
   margin-left: 10px;
+}
+.see-all h6 {
+  text-align: right;
+  margin-right: 26px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #fff;
 }

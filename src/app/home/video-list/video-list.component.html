@@ -1,6 +1,9 @@
+<a class="see-all" routerLink="/videos">
+  <h6>See all</h6>
+</a>
 <div class="list-wrapper">
-  <div *ngFor="let videos of videoList">
-    <div class="list" (click)="setUrl(videos.url)">
+  <div *ngFor="let videos of videoList;  let i=index">
+    <div class="list" (click)="setUrl(videos.url)" *ngIf="i<16">
       <div class="list-img-div">
         <img src={{videos.thumbnail}} alt="thumbnail" />
       </div>
