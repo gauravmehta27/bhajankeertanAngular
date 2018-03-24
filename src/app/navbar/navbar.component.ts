@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['navbar.component.css']
 })
 export class NavbarComponent {
-  customInterval=3000;
+  customInterval = 3000;
   isIn = false;   // store state
   toggleState() { // click handler
       let bool = this.isIn;
-      this.isIn = bool === false ? true : false; 
+      this.isIn = bool === false ? true : false;
   }
 }

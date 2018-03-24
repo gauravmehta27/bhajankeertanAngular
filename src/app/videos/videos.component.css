@@ -1,15 +1,11 @@
-.page-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
 .videos-img-div {
   padding: 3px;
-  border: #cccccc solid 1px;
-  background-color: #FFF;
 }
 .videos-img-div img {
   width: auto;
   height: 106px;
+  border: #fff solid 2px;
+  background-color: #FFF;
 }
 .list {
   display: flex;
@@ -36,7 +32,14 @@
 .artist-text {
   margin-left: 20px;
 }
-.videos-description {
+.videos-description h5 {
   font-size: 13px;
-  line-height: 15px;
+  line-height: 20px;
+}
+.videos-title {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+i,svg {
+  margin-right: 6px;
 }

@@ -1,7 +1,9 @@
 .main-wrapper {
   width: 80%;
   margin: 80px auto 0px auto;
-  background-color: #f44242;
+  background-color: #e03c26;
   padding: 10px;
-  border: 10px solid #fff;
+  border: 6px solid #fff;
+  overflow-y: auto;
+  min-height: calc(100vh - 80px);
 }

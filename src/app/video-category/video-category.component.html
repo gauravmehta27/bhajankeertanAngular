@@ -1,1 +1,21 @@
-<h1>video category</h1>
+<div class="videos-wrapper">
+  <h3 class="page-title">{{categoryName}}</h3>
+  <app-selected-category-video></app-selected-category-video>
+  <div class="videos-inner-wrapper" *ngFor="let videos of videoList">
+    <div class="list" (click)="setUrl(videos)">
+      <div class="videos-img-div">
+        <img src={{videos.thumbnail}} alt="thumbnail" />
+      </div>
+      <div class="videos-content">
+        <h4 class="videos-title">{{videos.title}}</h4>
+        <div class="videos-description">
+          <h5>{{videos.description}}</h5>
+        </div>
+        <div class="videos-duration-artist">
+          <i class="glyphicon glyphicon-pencil"></i><span>{{videos.lyricist}}</span>
+          <span class="artist-text"><i class="fa fa-microphone"></i>{{videos.singer}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

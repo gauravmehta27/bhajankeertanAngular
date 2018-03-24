@@ -2,7 +2,8 @@
 body {
   background: url("assets/images/body_bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
+  font-family: lato !important;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -20,4 +21,11 @@ body {
 }
 a, a:hover, a:focus {
   text-decoration: none;
+}
+.page-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
 }

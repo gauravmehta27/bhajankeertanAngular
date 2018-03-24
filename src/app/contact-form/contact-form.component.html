@@ -1,21 +1,23 @@
 <div class="contact-wrapper">
   <h3 class="page-title">Contact</h3>
-  <h6>Contact Us for copyrights and new bhajans</h6>
-  <form [formGroup]="form" (ngSubmit)="createPost($event)" novalidate>
-    <div class="form-group">
-      <label class="center-block">Email:
-        <input class="form-control" formControlName="email">
-      </label>
-    </div>
-    <div class="form-group">
-      <label class="center-block">Phone:
-        <input class="form-control" formControlName="phone">
-      </label>
-    </div>
-    <div class="form-group">
-      <label class="center-block">Concern:</label>
-        <textarea class="form-control" formControlName="concern"></textarea>
-    </div>
-    <button type="submit">submit</button>
-  </form>
+  <h5>Contact Us for copyrights and new bhajans</h5>
+  <div class="form-wrapper col-sm-4 col-sm-offset-4 ">
+    <form [formGroup]="form" (ngSubmit)="createPost($event)" novalidate>
+      <div class="form-group">
+        <label class="center-block">Email:</label>
+          <input class="form-control" formControlName="email" placeholder="Your Email">
+      </div>
+      <div class="form-group">
+        <label class="center-block">Phone:</label>
+          <input class="form-control" formControlName="phone" placeholder="Your Phone">
+      </div>
+      <div class="form-group">
+        <label class="center-block">Concern:</label>
+          <textarea class="form-control" formControlName="concern" placeholder="Your Concern"></textarea>
+      </div>
+      <div class="btn-wrapper">
+        <button type="submit">SUBMIT</button>
+      </div>
+    </form>
+  </div>
 </div>

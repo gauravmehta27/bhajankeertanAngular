@@ -16,7 +16,7 @@ import { ContactFormModule } from './contact-form/contact-form.module';
 import { HttpClientModule  } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AngularFontAwesomeModule,
     AboutModule,
     FormSuccessModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     HttpClientModule

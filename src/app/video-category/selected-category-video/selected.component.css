@@ -1,0 +1,21 @@
+.videos-iframe-wrapper {
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.videos-iframe-inner-wrapper {
+  width: 80%;
+  margin: auto;
+}
+iframe {
+  width: 100%;
+  height: 450px;
+}
+.lyricist {
+  margin-bottom: 0;
+}
+.title {
+  margin-top: 10px;
+}

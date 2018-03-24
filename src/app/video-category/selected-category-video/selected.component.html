@@ -1,0 +1,8 @@
+<div class="videos-iframe-wrapper" *ngIf="video.url">
+  <div class="videos-iframe-inner-wrapper">
+    <iframe [src]="video.url | safeVideoUrl" frameborder="0" allowfullscreen></iframe>
+    <h3 class="title">{{video.title}}</h3>
+    <p class="lyricist">Lyricist: {{video.lyricist}}</p>
+    <p>Singer: {{video.singer}}</p>
+  </div>
+</div>

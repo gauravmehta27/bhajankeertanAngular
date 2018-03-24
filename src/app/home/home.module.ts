@@ -2,7 +2,6 @@ import { SafePipe } from './safety.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { FrameUrlService } from './frame-url.service';
 import { HttpModule } from '@angular/http';
-import { DataService } from './../contact-form/data.service';
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoFrameComponent } from './video-frame/video-frame.component';
 import { SliderComponent } from './slider/slider.component';

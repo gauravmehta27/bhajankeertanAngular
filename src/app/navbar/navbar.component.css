@@ -6,3 +6,14 @@
 .navbar .container-fluid {
   margin-top: 15px;
 }
+.navbar-inverse {
+  background-color: #d1321d;
+  border: 6px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.navbar-nav a {
+  color: #fff;
+}
+.navbar-nav {
+  float: right;
+}

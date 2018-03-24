@@ -6,13 +6,13 @@ import { SelectedFrameUrlService } from '../selected-frame-url.service';
   templateUrl: './selected-video.component.html',
   styleUrls: ['./selected-video.component.css']
 })
-export class SelectedVideoComponent {
-  video:object;
+export class SelectedVideoComponent implements OnInit {
+  video: object;
 
   constructor(private data: SelectedFrameUrlService) { }
 
   ngOnInit() {
-    this.data.currentUrl.subscribe(video => {this.video = video; console.log(video);})
+    this.data.currentUrl.subscribe(video => {this.video = video; });
   }
 
 }

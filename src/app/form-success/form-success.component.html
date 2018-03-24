@@ -1,21 +1,7 @@
-<div class="contact-wrapper">
+<div class="success-wrapper">
   <h3 class="page-title">Contact</h3>
-  <h6>Contact Us for copyrights and new bhajans</h6>
-  <form [formGroup]="form" (ngSubmit)="createPost($event)" novalidate>
-    <div class="form-group">
-      <label class="center-block">Email:
-        <input class="form-control" formControlName="email">
-      </label>
-    </div>
-    <div class="form-group">
-      <label class="center-block">Phone:
-        <input class="form-control" formControlName="phone">
-      </label>
-    </div>
-    <div class="form-group">
-      <label class="center-block">Concern:</label>
-        <textarea class="form-control" formControlName="concern"></textarea>
-    </div>
-    <button type="submit">submit</button>
-  </form>
+  <div class="success-center">
+    <h5>Thanks for filling in your details. We will get back to you shortly! </h5>
+    <a routerLink="/videos"><p>Go To Videos</p></a>
+</div>
 </div>

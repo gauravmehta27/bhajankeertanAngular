@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Http, Response } from '@angular/http';
 
 @Injectable()
-export class SelectedFrameUrlService {
+export class SelectedVideoUrlService {
 
   private urlSource = new BehaviorSubject<object>({});
   currentUrl = this.urlSource.asObservable();

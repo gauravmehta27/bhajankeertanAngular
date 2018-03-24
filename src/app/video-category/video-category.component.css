@@ -1,0 +1,44 @@
+.videos-img-div {
+  padding: 3px;
+}
+.videos-img-div img {
+  width: auto;
+  height: 106px;
+  border: #fff solid 2px;
+  background-color: #FFF;
+}
+.list {
+  display: flex;
+  cursor: pointer;
+}
+.videos-content {
+  margin-left: 20px;
+}
+.videos-wrapper {
+  width: 96%;
+  margin: auto;
+  color: #fff;
+  clear: both;
+  overflow: auto;
+}
+.videos-inner-wrapper {
+  width: 46%;
+  float: left;
+  margin-left: 3%;
+  margin-top: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  padding-bottom: 10px;
+}
+.artist-text {
+  margin-left: 20px;
+}
+.videos-description h5 {
+  font-size: 13px;
+  line-height: 20px;
+}
+.videos-title {
+  font-weight: 600;
+}
+i,svg {
+  margin-right: 6px;
+}

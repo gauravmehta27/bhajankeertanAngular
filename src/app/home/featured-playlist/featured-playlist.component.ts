@@ -10,35 +10,5 @@ export class FeaturedPlaylistComponent {
     'url': "assets/images/durga-maa.png",
     'title': "Durga Bhajan",
     "categotyId": 1
-  },
-  {
-    'url': "assets/images/durga-maa.png",
-    'title': "Durga Bhajan",
-    "categotyId": 1
-  },
-  {
-    'url': "assets/images/durga-maa.png",
-    'title': "Durga Bhajan",
-    "categotyId": 1
-  },
-  {
-    'url': "assets/images/durga-maa.png",
-    'title': "Durga Bhajan",
-    "categotyId": 1
-  },
-  {
-    'url': "assets/images/durga-maa.png",
-    'title': "Durga Bhajan",
-    "categotyId": 1
-  },
-  {
-    'url': "assets/images/durga-maa.png",
-    'title': "Durga Bhajan",
-    "categotyId": 1
-  },
-  {
-    'url': "assets/images/durga-maa.png",
-    'title': "Durga Bhajan",
-    "categotyId": 1
   }]
 }

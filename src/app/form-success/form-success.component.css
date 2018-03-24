@@ -1,7 +1,24 @@
-.contact-wrapper {
-  color: #fff;
+.success-wrapper {
+  position: relative;
+  overflow: auto;
+  min-height: calc(100vh - 112px);
 }
-.page-title {
+.success-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center;
-  margin-bottom: 40px;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+p {
+  color: #fff;
+  border: 2px solid #fff;
+  width: 200px;
+  height: 43px;
+  padding-top: 7px;
+  border-radius: 5px;
+  margin: 26px auto 0 auto;
 }
