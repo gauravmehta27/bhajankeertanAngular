@@ -10,10 +10,11 @@ import { SelectedFrameUrlService } from './selected-frame-url.service';
 export class VideosComponent implements OnInit {
   url: object;
   videoList: any[];
-  constructor(private data: SelectedFrameUrlService, private videoService: VideoService ) { }
+  constructor(private selectedFrameUrlService: SelectedFrameUrlService, private videoService: VideoService ) { }
 
   ngOnInit() {
-    this.data.currentUrl.subscribe(url => this.url = url);
+    this.selectedFrameUrlService.changeUrl(this.url);
+    this.selectedFrameUrlService.currentUrl.subscribe(url => this.url = url);
     this.videoService.getAll()
     .subscribe(
       Response => {
@@ -22,7 +23,7 @@ export class VideosComponent implements OnInit {
   }
 
   setUrl(url) {
-    this.data.changeUrl(url);
+    this.selectedFrameUrlService.changeUrl(url);
     window.scrollTo(0, 80);
   }
 }
